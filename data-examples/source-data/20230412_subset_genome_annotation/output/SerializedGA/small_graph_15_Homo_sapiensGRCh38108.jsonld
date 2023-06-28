@@ -1,0 +1,395 @@
+{
+  "@context": "https://raw.githubusercontent.com/atlaskb/models/main/jsonld-context-autogen/kbmodel.context.jsonld",
+  "@graph": [
+    {
+      "id": "ENSEMBL:ENSG00000290825",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "DDX11L2",
+      "description": "DEAD/H-box helicase 11 like 2 (pseudogene) [Source:NCBI gene (formerly Entrezgene)%3BAcc:84771]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "DDX11L2",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000290825"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000223972",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "DDX11L1",
+      "description": "DEAD/H-box helicase 11 like 1 (pseudogene) [Source:HGNC Symbol%3BAcc:HGNC:37102]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "DDX11L1",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000223972"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000227232",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "WASH7P",
+      "description": "WASP family homolog 7%2C pseudogene [Source:HGNC Symbol%3BAcc:HGNC:38034]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "WASH7P",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000227232"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000278267",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "MIR6859-1",
+      "description": "microRNA 6859-1 [Source:HGNC Symbol%3BAcc:HGNC:50039]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "MIR6859-1",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000278267"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000243485",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "MIR1302-2HG",
+      "description": "MIR1302-2 host gene [Source:HGNC Symbol%3BAcc:HGNC:52482]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "MIR1302-2HG",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000243485"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000284332",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "MIR1302-2",
+      "description": "microRNA 1302-2 [Source:HGNC Symbol%3BAcc:HGNC:35294]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "MIR1302-2",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000284332"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000237613",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "FAM138A",
+      "description": "family with sequence similarity 138 member A [Source:HGNC Symbol%3BAcc:HGNC:32334]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "FAM138A",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000237613"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000268020",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "OR4G4P",
+      "description": "olfactory receptor family 4 subfamily G member 4 pseudogene [Source:HGNC Symbol%3BAcc:HGNC:14822]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "OR4G4P",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000268020"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000290826",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "",
+      "description": "novel transcript",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000290826"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000240361",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "OR4G11P",
+      "description": "olfactory receptor family 4 subfamily G member 11 pseudogene [Source:HGNC Symbol%3BAcc:HGNC:31276]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "OR4G11P",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000240361"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000186092",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "OR4F5",
+      "description": "olfactory receptor family 4 subfamily F member 5 [Source:HGNC Symbol%3BAcc:HGNC:14825]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "OR4F5",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "protein_coding",
+      "source_id": "ENSG00000186092"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000238009",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "",
+      "description": "novel transcript",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000238009"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000239945",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "",
+      "description": "novel transcript",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000239945"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000233750",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "CICP27",
+      "description": "capicua transcriptional repressor pseudogene 27 [Source:HGNC Symbol%3BAcc:HGNC:48835]",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "CICP27",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000233750"
+    },
+    {
+      "id": "ENSEMBL:ENSG00000268903",
+      "category": [
+        "bican:GeneAnnotation"
+      ],
+      "type": [],
+      "name": "",
+      "description": "novel pseudogene",
+      "xref": [],
+      "in_taxon": [
+        {
+          "id": "NCBITaxon:9606",
+          "category": [
+            "biolink:OrganismTaxon"
+          ],
+          "type": [],
+          "xref": []
+        }
+      ],
+      "in_taxon_label": "Homo sapiens",
+      "symbol": "",
+      "synonym": [],
+      "referenced_in": "Ensembl-9606-108",
+      "molecular_type": "noncoding",
+      "source_id": "ENSG00000268903"
+    }
+  ]
+}
