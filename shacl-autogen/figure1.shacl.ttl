@@ -6,7 +6,11 @@
 <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:Container> a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:CellClass> ;
+    sh:property [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:Cell> ;
+            sh:nodeKind sh:IRI ;
+            sh:order 2 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:cells> ],
+        [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:CellClass> ;
             sh:nodeKind sh:IRI ;
             sh:order 1 ;
             sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:classes> ],
@@ -17,11 +21,7 @@
         [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:CellSubclass> ;
             sh:nodeKind sh:IRI ;
             sh:order 0 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:subclasses> ],
-        [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:Cell> ;
-            sh:nodeKind sh:IRI ;
-            sh:order 2 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:cells> ] ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:subclasses> ] ;
     sh:targetClass <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:Container> .
 
 <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:Relationship> a sh:NodeShape ;
@@ -39,10 +39,9 @@
     sh:closed true ;
     sh:description "Cell, a member of a cluster" ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:in ( "PALL" "CNU" "TH" "HY" "MB" "HB" "CB" ) ;
-            sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:broad_region> ],
+    sh:property [ sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ],
         [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:GroupRelationship> ;
             sh:nodeKind sh:BlankNode ;
             sh:order 0 ;
@@ -51,9 +50,10 @@
             sh:minCount 1 ;
             sh:order 2 ;
             sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ],
-        [ sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ] ;
+        [ sh:in ( "PALL" "CNU" "TH" "HY" "MB" "HB" "CB" ) ;
+            sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:broad_region> ] ;
     sh:targetClass <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:Cell> .
 
 <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:CellClass> a sh:NodeShape ;
@@ -70,12 +70,12 @@
             sh:order 1 ;
             sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:has_hierarchical_relationships> ],
         [ sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ],
+        [ sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 2 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ],
-        [ sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ] ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ] ;
     sh:targetClass <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:CellClass> .
 
 <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:CellSubclass> a sh:NodeShape ;
@@ -90,14 +90,14 @@
             sh:maxCount 1 ;
             sh:order 1 ;
             sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:division> ],
-        [ sh:in ( "Glut" "GABA" "Glut−GABA" "GABA−Glyc" "Chol" "Dopa" "Sero" "Nora" "Hist" "NA" ) ;
-            sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:nt_type> ],
         [ sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 3 ;
             sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ],
+        [ sh:in ( "Glut" "GABA" "Glut−GABA" "GABA−Glyc" "Chol" "Dopa" "Sero" "Nora" "Hist" "NA" ) ;
+            sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:nt_type> ],
         [ sh:maxCount 1 ;
             sh:order 4 ;
             sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ] ;
@@ -116,27 +116,27 @@
             sh:order 0 ;
             sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:has_hierarchical_relationships> ],
         [ sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ],
+        [ sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 2 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ],
-        [ sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ] ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ] ;
     sh:targetClass <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:Cluster> .
 
 <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:GroupRelationship> a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:in ( "CONSISTS_OF" "MEMBER_OF" ) ;
-            sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:relationship_type> ],
-        [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:NamedThing> ;
+    sh:property [ sh:class <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:NamedThing> ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:order 1 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:related_to> ] ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:related_to> ],
+        [ sh:in ( "CONSISTS_OF" "MEMBER_OF" ) ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:relationship_type> ] ;
     sh:targetClass <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:GroupRelationship> .
 
 <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:HierarchicalRelationship> a sh:NodeShape ;
@@ -158,11 +158,11 @@
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ],
-        [ sh:maxCount 1 ;
             sh:order 0 ;
-            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ] ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:id> ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:label> ] ;
     sh:targetClass <https://www.biorxiv.org/content/10.1101/2023.01.22.525049v1/:NamedThing> .
 
 
