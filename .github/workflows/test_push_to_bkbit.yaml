@@ -1,0 +1,35 @@
+name: push pydantic gars to bkbit
+
+on:
+  push:
+    branches:
+      - workflow_updates_20240510
+    paths:
+      - 'models_py-autogen/gars.py'
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+    paths:
+      - 'models_py-autogen/gars.py' 
+
+jobs:
+  update_gars:
+    if: github.event.pull_request.merged == true || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+
+      - name: Pushes to another repository
+        uses: dmnemec/copy_file_to_another_repo_action@main
+
+        env: 
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'models_py-autogen/gars.py'
+          destination_repo: 'puja-trivedi/test_workflows_20240510'
+          destination_folder: '.'
+          user_email: 'xspuja@gmail.com' # the GitHub user email associated with the API token secret.
+          user_name: 'puja-trivedi' # the GitHub username associated with the API token secret.
+          commit_message: "pydantic version of gars model (gars.py) was updated. Pushed from brain-bican/model repository"
