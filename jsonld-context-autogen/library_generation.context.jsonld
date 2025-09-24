@@ -166,10 +166,6 @@
       },
       "ZFIN": "http://identifiers.org/zfin/",
       "bican": "https://identifiers.org/brain-bican/vocab/",
-      "bican_prov": {
-         "@id": "https://github.com/brain-bican/models/blob/main/linkml-schema/bican_prov.yaml",
-         "@prefix": true
-      },
       "biolink": "https://w3id.org/biolink/vocab/",
       "bioschemas": "https://bioschemas.org/",
       "dcid": "https://datacommons.org/browser/",
@@ -220,6 +216,7 @@
          "@id": "f10e928d-5a2b-4943-af18-d8fe5d05528d"
       },
       "category": {
+         "@type": "xsd:anyURI",
          "@id": "biolink:category"
       },
       "amplified_cDNA_PCR_cycles": {
@@ -263,7 +260,7 @@
          "@id": "value"
       },
       "content_url": {
-         "@id": "content_url"
+         "@id": "schema:url"
       },
       "creation_date": {
          "@type": "xsd:date",
@@ -469,6 +466,10 @@
          "@type": "@id",
          "@id": "biolink:related_to_at_instance_level"
       },
+      "revision_of": {
+         "@type": "@id",
+         "@id": "revision_of"
+      },
       "rights": {
          "@id": "biolink:rights"
       },
@@ -663,6 +664,9 @@
       },
       "TissueSample": {
          "@id": "TissueSample"
+      },
+      "VersionedNamedThing": {
+         "@id": "VersionedNamedThing"
       }
    }
 }

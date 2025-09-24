@@ -1,17 +1,130 @@
 ```mermaid
 erDiagram
-NamedThing {
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
-}
-VersionedNamedThing {
+ParcellationAtlas {
+    string has_anatomical_space  
+    string has_anatomical_annotation_set  
+    string has_parcellation_terminology  
+    string specialization_of  
     string version  
-    uriorcurie id  
-    string name  
-    string description  
+    string id  
+    iri_type iri  
     uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
+}
+ParcellationAnnotationTermMap {
+    string subject_parcellation_term  
+    string subject_parcellation_annotation  
+}
+ParcellationAnnotation {
+    string part_of_anatomical_annotation_set  
+    string internal_identifier  
+    integer voxel_count  
+}
+AnatomicalAnnotationSet {
+    string parameterizes  
+    string version  
+    string id  
+    iri_type iri  
+    uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
+}
+ParcellationColorAssignment {
+    string subject_parcellation_term  
+    string part_of_parcellation_color_scheme  
+    string color  
+}
+ParcellationColorScheme {
+    string subject_parcellation_terminology  
+    string version  
+    string id  
+    iri_type iri  
+    uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
+}
+ParcellationTerm {
+    integer ordinal  
+    string symbol  
+    string part_of_parcellation_term_set  
+    string has_parent_parcellation_term  
+    string version  
+    string id  
+    iri_type iri  
+    uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
+}
+ParcellationTermSet {
+    integer ordinal  
+    string part_of_parcellation_terminology  
+    string has_parent_parcellation_term_set  
+    string version  
+    string id  
+    iri_type iri  
+    uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
+}
+ParcellationTerminology {
+    string version  
+    string id  
+    iri_type iri  
+    uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
+}
+AnatomicalSpace {
+    string measures  
+    string version  
+    string id  
+    iri_type iri  
+    uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
 }
 ImageDataset {
     ANATOMICAL_DIRECTION x_direction  
@@ -25,94 +138,35 @@ ImageDataset {
     float z_resolution  
     DISTANCE_UNIT unit  
     string version  
-    uriorcurie id  
-    string name  
-    string description  
+    string id  
+    iri_type iri  
     uriorcurieList category  
-}
-AnatomicalSpace {
-    string measures  
-    string version  
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
-}
-ParcellationTerminology {
-    string version  
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
-}
-ParcellationTermSet {
-    string part_of_parcellation_terminology  
-    integer ordinal  
-    string has_parent_parcellation_term_set  
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
-}
-ParcellationTerm {
-    string symbol  
-    string part_of_parcellation_term_set  
-    integer ordinal  
-    string has_parent_parcellation_term  
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
-}
-ParcellationColorScheme {
-    string subject_parcellation_terminology  
-    string version  
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
-}
-ParcellationColorAssignment {
-    string part_of_parcellation_color_scheme  
-    string subject_parcellation_term  
-    string color  
-}
-AnatomicalAnnotationSet {
-    string parameterizes  
-    string version  
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
-}
-ParcellationAnnotation {
-    string part_of_anatomical_annotation_set  
-    string internal_identifier  
-    integer voxel_count  
-}
-ParcellationAnnotationTermMap {
-    string subject_parcellation_annotation  
-    string subject_parcellation_term  
-}
-ParcellationAtlas {
-    string has_anatomical_space  
-    string has_anatomical_annotation_set  
-    string has_parcellation_terminology  
-    string specialization_of  
-    string version  
-    uriorcurie id  
-    string name  
-    string description  
-    uriorcurieList category  
+    stringList type  
+    label_type name  
+    narrative_text description  
+    boolean deprecated  
+    stringList provided_by  
+    uriorcurieList xref  
+    label_type full_name  
+    label_typeList synonym  
 }
 
-VersionedNamedThing ||--|o VersionedNamedThing : "revision_of"
-ImageDataset ||--|o VersionedNamedThing : "revision_of"
-AnatomicalSpace ||--|o VersionedNamedThing : "revision_of"
-ParcellationTerminology ||--|o VersionedNamedThing : "revision_of"
-ParcellationColorScheme ||--|o VersionedNamedThing : "revision_of"
-AnatomicalAnnotationSet ||--|o VersionedNamedThing : "revision_of"
 ParcellationAtlas ||--|o VersionedNamedThing : "revision_of"
+ParcellationAtlas ||--}o Attribute : "has attribute"
+AnatomicalAnnotationSet ||--|o VersionedNamedThing : "revision_of"
+AnatomicalAnnotationSet ||--}o Attribute : "has attribute"
+ParcellationColorScheme ||--|o VersionedNamedThing : "revision_of"
+ParcellationColorScheme ||--}o Attribute : "has attribute"
+ParcellationTerm ||--|o VersionedNamedThing : "revision_of"
+ParcellationTerm ||--}o Attribute : "has attribute"
+ParcellationTermSet ||--|o VersionedNamedThing : "revision_of"
+ParcellationTermSet ||--}o Attribute : "has attribute"
+ParcellationTerminology ||--|o VersionedNamedThing : "revision_of"
+ParcellationTerminology ||--}o Attribute : "has attribute"
+AnatomicalSpace ||--|o VersionedNamedThing : "revision_of"
+AnatomicalSpace ||--}o Attribute : "has attribute"
+ImageDataset ||--|o VersionedNamedThing : "revision_of"
+ImageDataset ||--}o Attribute : "has attribute"
 
 ```
 
