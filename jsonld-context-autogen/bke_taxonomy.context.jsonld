@@ -26,6 +26,10 @@
       },
       "CHEMBL.TARGET": "http://identifiers.org/chembl.target/",
       "CPT": "https://www.ama-assn.org/practice-management/cpt/",
+      "DHBA": {
+         "@id": "https://purl.brain-bican.org/ontology/dmbao/DMBA_",
+         "@prefix": true
+      },
       "DRUGBANK": "http://identifiers.org/drugbank/",
       "EDAM-DATA": {
          "@id": "http://edamontology.org/data_",
@@ -170,7 +174,10 @@
       "dictyBase": "http://dictybase.org/gene/",
       "doi": "https://doi.org/",
       "gff3": "https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md#",
-      "gpi": "https://github.com/geneontology/go-annotation/blob/master/specs/gpad-gpi-2-0.md#",
+      "gpi": {
+         "@type": "xsd:float",
+         "@id": "gpi"
+      },
       "linkml": "https://w3id.org/linkml/",
       "oboInOwl": "http://www.geneontology.org/formats/oboInOwl#",
       "orphanet": {
@@ -264,9 +271,33 @@
          "@type": "@id",
          "@id": "contains_cluster"
       },
+      "curated_markers_to_mouse": {
+         "@type": "@id",
+         "@id": "curated_markers_to_mouse"
+      },
+      "curated_markers_to_primates": {
+         "@type": "@id",
+         "@id": "curated_markers_to_primates"
+      },
       "number_of_cells": {
          "@type": "xsd:integer",
          "@id": "number_of_cells"
+      },
+      "spatial_proportions_human": {
+         "@type": "@id",
+         "@id": "spatial_proportions_human"
+      },
+      "spatial_proportions_macaque": {
+         "@type": "@id",
+         "@id": "spatial_proportions_macaque"
+      },
+      "spatial_proportions_marmoset": {
+         "@type": "@id",
+         "@id": "spatial_proportions_marmoset"
+      },
+      "spatial_regional_proportions": {
+         "@type": "@id",
+         "@id": "spatial_regional_proportions"
       },
       "checksum_algorithm": {
          "@context": {
@@ -278,6 +309,16 @@
       },
       "value": {
          "@id": "value"
+      },
+      "chembl_chirality": {
+         "@id": "biolink:chembl_chirality"
+      },
+      "chembl_drug_warning": {
+         "@id": "biolink:chembl_drug_warning"
+      },
+      "chembl_prodrug": {
+         "@type": "xsd:boolean",
+         "@id": "biolink:chembl_prodrug"
       },
       "contains_observation": {
          "@type": "@id",
@@ -331,6 +372,10 @@
       "part_of_palette": {
          "@type": "@id",
          "@id": "part_of_palette"
+      },
+      "equivalent_identifiers": {
+         "@type": "xsd:anyURI",
+         "@id": "biolink:equivalent_identifiers"
       },
       "format": {
          "@id": "biolink:format"
@@ -448,8 +493,11 @@
       "in_taxon_label": {
          "@id": "biolink:in_taxon_label"
       },
+      "information_content": {
+         "@type": "xsd:float",
+         "@id": "biolink:information_content"
+      },
       "iri": {
-         "@type": "xsd:anyURI",
          "@id": "biolink:iri"
       },
       "is_revision_of": {
@@ -580,6 +628,26 @@
       },
       "source_id": {
          "@id": "schema:identifier"
+      },
+      "adj": {
+         "@type": "xsd:float",
+         "@id": "adj"
+      },
+      "gpe": {
+         "@type": "xsd:float",
+         "@id": "gpe"
+      },
+      "sn": {
+         "@type": "xsd:float",
+         "@id": "sn"
+      },
+      "sth": {
+         "@type": "xsd:float",
+         "@id": "sth"
+      },
+      "str": {
+         "@type": "xsd:float",
+         "@id": "str"
       },
       "strain": {
          "@id": "strain"
@@ -783,6 +851,15 @@
       },
       "QuantityValue": {
          "@id": "biolink:QuantityValue"
+      },
+      "RelativeFrequencyAnalysisResult": {
+         "@id": "biolink:RelativeFrequencyAnalysisResult"
+      },
+      "SpatialProportions": {
+         "@id": "SpatialProportions"
+      },
+      "StudyResult": {
+         "@id": "biolink:StudyResult"
       },
       "SubjectOfInvestigation": {
          "@id": "biolink:SubjectOfInvestigation"
